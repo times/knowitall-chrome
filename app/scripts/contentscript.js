@@ -1,12 +1,11 @@
 /*global $, handlebars, Doughnut, Chart*/
-'use strict'; 
+'use strict';
 
 console.log('\'Allo \'Allo! Content script');
 
 // compile html template with handlebars
 $.get(chrome.extension.getURL('dialog.hb'), function(v){
 	var template = Handlebars.compile(v);
-	console.dir(template);
 	$('body').append('<canvas id="myChart" width="100" height="100"></canvas>');
 
 	// get data about the page from storyline
@@ -81,7 +80,7 @@ $.get(chrome.extension.getURL('dialog.hb'), function(v){
 			onAnimationComplete : null
 		}
 
-	
+
 
 	// get array of topic strings
 
