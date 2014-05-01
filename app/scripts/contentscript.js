@@ -1,5 +1,5 @@
 /*global $, handlebars, Doughnut, Chart*/
-'use strict';
+'use strict'; 
 
 console.log('\'Allo \'Allo! Content script');
 
@@ -39,11 +39,17 @@ $.get(chrome.extension.getURL('dialog.hb'), function(v){
 		}
 	]
 
+// insert chart
+
+	//Get the context of the canvas element we want to select
+	var ctx = document.getElementById("myChart").getContext("2d");
+	new Chart(ctx).Doughnut(chartData,options);
+
 	// put data into pie chart
 
 		// Pie chart settings
 
-		Doughnut.defaults = {
+		var options = {
 			//Boolean - Whether we should show a stroke on each segment
 			segmentShowStroke : true,
 
@@ -75,11 +81,7 @@ $.get(chrome.extension.getURL('dialog.hb'), function(v){
 			onAnimationComplete : null
 		}
 
-	// insert chart
-
-		//Get the context of the canvas element we want to select
-		var ctx = document.getElementById("myChart").getContext("2d");
-		var myNewChart = new Chart(ctx).Doughnut(chartData,options);
+	
 
 	// get array of topic strings
 

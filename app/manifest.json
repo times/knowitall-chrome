@@ -11,7 +11,8 @@
     "background": {
         "scripts": [
             "scripts/chromereload.js",
-            "scripts/background.js"
+            "scripts/background.js",
+            "scripts/Chart.js"
         ]
     },
     "page_action": {
@@ -40,6 +41,7 @@
             "js": [
                 "bower_components/jquery/dist/jquery.js",
                 "bower_components/handlebars/handlebars.js",
+                "scripts/Chart.js",
                 "scripts/contentscript.js"
             ],
             "run_at": "document_end",
