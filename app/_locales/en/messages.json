@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "knowitall",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "The client-side companion to The Times and Sunday Times' KnowItAll semantically-driven recommendation tool.",
+    "description": "The description of the application"
+  }
+}
