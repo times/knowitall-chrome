@@ -8,14 +8,38 @@
         <link href="styles/main.css" rel="stylesheet">
         <!-- endbuild -->
 
+        <!-- fonts -->
+        <link rel="stylesheet" type="text/css" href="http://www.thetimes.co.uk/fonts/TimesModern-Bold.css"/>
+        <link rel="stylesheet" type="text/css" href="http://www.thetimes.co.uk/fonts/TimesClassicText-Roman.css"/>
+        <link rel="stylesheet" type="text/css" href="http://www.thetimes.co.uk/fonts/TimesClassicText-Italic.css"/>
+        <!-- endfonts -->
+
         <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/handlebars/handlebars.js"></script>
         <!-- endbower -->
 
         <!-- build:js scripts/popup.js -->
         <script src="scripts/popup.js"></script>
         <!-- endbuild -->
+
+        <script src="scripts/Chart.js"></script>
     </head>
     <body>
       <h1>'Allo, 'Allo!</h1>
+
+      <script id="popupTemplate" type="text/x-handlebars-template">
+          <div id="popup">
+            <div class="recommended" id="recommended1"><a href="{{link1}}" target="_blank">{{recommended1}}</a>, {{date1}}</div>
+            <div class="recommended" id="recommended2"><a href="{{link2}}" target="_blank">{{recommended2}}</a>, {{date2}}</div>
+            <div class="recommended" id="recommended3"><a href="{{link3}}" target="_blank">{{recommended3}}</a>, {{date3}}</div>
+            <canvas id="topicChart" width="200" height="200"></canvas>
+            <div id="share">
+                <a href="" target="_blank">Boast on twitter</a>
+            </div>
+          </div>
+      </script>
+
+
     </body>
 </html>
