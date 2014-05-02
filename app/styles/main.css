@@ -2,6 +2,11 @@ body {
     padding: 20px;
 }
 
+div {
+	margin:0;
+	padding:0;
+}
+
 #myChart {
 	position:fixed;
 	bottom:50px;
@@ -10,32 +15,95 @@ body {
 
 #popup {
 	position: absolute;
+	top:100px;
+	left:100px;
 	opacity:0;
-	width:490px;
-	height:490px;
+	width:600px;
+	height:350px;
 	background color:white;
-	border:solid 1px black;
-	padding:10px;
 }
 
-#popup div {
-	margin:2px 0;
+#popup #header {
+	width:100%;
+	height:80px;
+	background-color: #2575B2;
+}
+
+#header h1 {
+	font-family:Helvetica;
+	font-size:2em;
+	color:white;
+	padding:20px 0 0 20px;
+	margin:0;
+}
+
+#popup #stories {
+	width:348px;
+	height:270px;
+	background-color: #313131;
+	display:inline-block;
+	float:left;
+	border-right:solid white 2px;
+}
+
+	#stories .recommended {
+		height: 124px;
+		width:348px;
+		font-family:Helvetica;
+		font-size:1em;
+		color:grey;
+		margin:0;
+		padding:0;
+	}
+
+	#stories #recommended1 {
+		border-bottom: white 2px solid;
+	}
+
+	.recommended .standfirst {
+		color:white;
+	}
+
+	.recommended p {
+		padding:10px 0 0 10px;
+		margin:0;
+	}
+
+	#popup a {
+		text-decoration: none;
+		color:#CEEAFF;
+	}
+
+	#popup .share a {
+		font-family: Helvetica;
+		font-style: italic;
+		color:grey;
+	}
+
+#popup #chartbox {
+	float:left;
+	display:inline-block;
+	width:250px;
+	height:270px;
+	background-color:#313131;
+	text-align: center;
+}
+
+#chartbox h2 {
+	font-family: Helvetica;
+	font-size:1.2em;
+	color:white;
 	padding:0;
+	margin:10px;
 }
 
-#popup a {
-	text-decoration: none;
-	color:black;
+#chartbox canvas {
+	margin:10px auto;
 }
 
-#popup .recommended {
-	font-family:"TimesClassicText-Roman";
-	font-size:1em;
-	color:grey;
-}
 
-#popup .share a {
-	font-family: "TimesClassicText-Italic";
-	color:grey;
+
+.focus {
+	background-color: #2575B2; 
 }
 
