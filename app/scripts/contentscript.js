@@ -12,17 +12,17 @@ $.get(chrome.extension.getURL('dialog.hb'), function(v){
 	// get data about the page from storyline
 
 	var data = {
+		'storyline':'Politics',
 		'recommended1':'Peace process fears as Adams arrested over 1972 murder',
 		'recommended2':'Police probe Geldof’s heroin death',
-		'recommended3':'Teacher’s family face suspect in court',
+		'standfirst1':'The arrest of Gerry Adams in connection with one of the most notorious murders of Northern Ireland’s Troubles today prompted renewed fears for the future of the peace process.',
+		'standfirst2':'Police are to investigate the circumstances surrounding the death of Peaches Geldof who was discovered dead of a heroin overdose with no drugs paraphernalia at the scene.',
 		'link1':'http://www.thetimes.co.uk/tto/news/uk/article4078027.ece',
 		'link2':'http://www.thetimes.co.uk/tto/life/celebrity/article4078211.ece',
-		'link3':'http://www.thetimes.co.uk/tto/news/uk/crime/article4078025.ece',
-		'date1':'January 1 2014',
-		'date2':'January 2 2014',
-		'date3':'January 3 2014',
+		'date1':'April 29 2014',
+		'date2':'May 2 2014',
 		'percentageRead':30,
-		'topics': ['Monty Python\'s Flying Circus', 'The Holy Grail', 'Brian'],
+		'topics': ['Monty Python\'s Flying Circus', 'The Holy Grail', 'Brian', 'Ann Maguire'],
 		'topicsRead':[10, 50, 80]
 	};
 
@@ -133,7 +133,7 @@ $.get(chrome.extension.getURL('dialog.hb'), function(v){
 
 		//fade in the popup
 		$('#popup').onload(function() {
-			$(this).offset({top:y, left: x+50}).animate('opacity',1);
+			$(this).offset({top:y, left: x+30}).animate('opacity',1);
 		});
 	});
 });

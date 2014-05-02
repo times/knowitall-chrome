@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/main.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <!-- endfonts -->
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <!-- endbower -->
+
+    <script src="scripts/Chart.js"></script>
+    <script src="scripts/contentscript-test.js"></script>
+    <style>
+    	body {
+    		height:1000px;
+    	}
+    </style>
+</head>
+<body>
+
+<h1>Second pupil arrested over murder of stabbed teacher</h1>
+
+<p>A second 15-year-old pupil has been arrested over the death of teacher <abbr>Ann Maguire</abbr> who was stabbed to death in her classroom
+The boy was removed from his lesson at Corpus Christi Catholic College in Leeds yesterday and arrested on conspiracy to murder.
+He is understood to have been questioned about inciting murder during conversations on social media and was released without charge.
+The teenager charged with murdering Mrs Maguire, 61, during a Spanish lesson on Monday is due to appear at Leeds Crown Court via video link this morning.
+Mrs Maguire’s husband, Donald, stared intently at the youth when the boy appeared for a two-minute hearing at a youth court.
+Mr Maguire, 62, sat between his daughters Kerry, 32, and Emma, 30, at the back of the courtroom and clutched their hands as the boy stood in the glass-fronted dock flanked by security guards.
+The family released an emotional tribute to the long-serving Spanish and religious education teacher, describing her as “our shining light”.
+The family travelled to the school where his wife died to lay flowers at the gate and attend church, where they were told they were supported by a “sea of love”.
+They then spent about 30 minutes in the church where they prayed and were comforted by Deacon Sean Quigley.</p>
+<p>
+Mrs Maguire was months away from retiring after working at Corpus Christi for more than 40 years when she was stabbed in front of pupils.
+It is the first time a teacher has been stabbed to death in a British classroom, and the first killing of a teacher in a school since the 1996 Dunblane massacre.
+She went to Corpus Christi as a student teacher and last year the school held a celebration of her 40 years’ service.
+This year, she moved to working four days a week ahead of her planned retirement in five months.
+Mrs Maguire, who was head of year 11 at the school for more than 10 years, lived in the Moortown area of Leeds with her husband, who is a retired maths teacher and landscape gardener.
+Meanwhile, it has emerged that Nick Clegg has blocked a proposal for the automatic jailing of offenders caught more than once with a knife.
+A Cabinet split over proposals put forward by Chris Grayling, the Justice Secretary, surfaced after the fatal stabbing Mrs Maguire.
+The Deputy Prime Minister argued that binding the hands of judges and removing their discretion could lead to unintended and perverse outcomes. The policy was a high profile Tory promise from before the last election.
+Letters obtained by the Daily Mail showed that Danny Alexander, Lib Dem Chief Secretary to the Treasury, warned that the move would cost too much money, while the party’s Schools Minister, David Laws, argued that mandatory minimum sentences were “too blunt an instrument”.</p>
+
+	<script id="popupTemplate" type="text/x-handlebars-template">
+
+		<div id="popup">
+
+			<div id="header">
+	            <h1>{{{storyline}}}</h1>
+	            <a href="#" onclick="sidebar()"><div></div></a>
+	        </div>
+
+	        <div id="stories">
+	            
+	            <div class="recommended" id="recommended1"><a href="{{link1}}" target="_blank">
+	                <p>{{{recommended1}}}</p>
+	                <p class="standfirst">{{{standfirst1}}}</p>
+	            </a>
+	            </div>
+	            <div class="recommended" id="recommended2">
+	            <a href="{{link2}}" target="_blank">
+	                <p>{{{recommended2}}}</p>
+	                <p class="standfirst">{{{standfirst2}}}</p>
+	            </a>
+	            </div>
+	        
+	        </div>
+
+	        <div id="chartbox">
+
+	            <h2>KNOWLEDGE BANK</h2>
+
+	            <canvas id="topicChart" width="170" height="170"></canvas>
+
+	        </div>
+
+	    </div>
+
+	</script>
+
+	<!--
+		<div id="header">
+			<h1>Politics</h1>
+		</div>
+
+		<div id="stories">
+			
+			<div class="recommended" id="recommended1"><a href="http://google.com" target="_blank">
+				<p>Lorem ipsum dolorem est pro dimicans</p>
+				<p class="standfirst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet interdum est. Lorem ipsum...</p>
+			</a>
+			</div>
+		    <div class="recommended" id="recommended2">
+		    <a href="http://google.com" target="_blank">
+		    	<p>Lorem ipsum dolorem est pro dimicans</p>
+		    	<p class="standfirst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet interdum est. Lorem ipsum...</p>
+		    </a>
+		    </div>
+		
+		</div>
+
+		<div id="chartbox">
+
+			<h2>KNOWLEDGE BANK</h2>
+
+	    	<canvas id="topicChart" width="200" height="200"></canvas>
+
+	    </div>
+
+	-->
+
+	    <!--
+	    <div id="share">
+	        <a href="" target="_blank">Boast on twitter</a>
+	    </div>
+	    -->
+
+</body>
+</html>
