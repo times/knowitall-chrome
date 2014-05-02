@@ -17,7 +17,7 @@ div {
 	position: absolute;
 	top:100px;
 	left:100px;
-	opacity:0;
+	/*opacity:0;*/
 	width:600px;
 	height:350px;
 	background color:white;
@@ -30,7 +30,8 @@ div {
 }
 
 #header h1 {
-	font-family:Helvetica;
+	font-family: 'Karla', sans-serif;
+	font-weight:bold;
 	font-size:2em;
 	color:white;
 	padding:20px 0 0 20px;
@@ -47,13 +48,17 @@ div {
 }
 
 	#stories .recommended {
-		height: 124px;
+		height: 134px;
 		width:348px;
-		font-family:Helvetica;
+		font-family: 'Karla', sans-serif;
 		font-size:1em;
 		color:grey;
 		margin:0;
 		padding:0;
+	}
+
+	#stories .recommended:hover {
+		background-color: #2575B2; 
 	}
 
 	#stories #recommended1 {
@@ -64,8 +69,13 @@ div {
 		color:white;
 	}
 
-	.recommended p {
-		padding:10px 0 0 10px;
+	.recommended p:nth-child(1) {
+		padding:26px 20px 0 20px;
+		margin:0;
+	}
+
+	.recommended p:nth-child(2) {
+		padding:8px 20px 0 20px;
 		margin:0;
 	}
 
@@ -75,7 +85,7 @@ div {
 	}
 
 	#popup .share a {
-		font-family: Helvetica;
+		font-family: 'Karla', sans-serif;
 		font-style: italic;
 		color:grey;
 	}
@@ -90,20 +100,16 @@ div {
 }
 
 #chartbox h2 {
-	font-family: Helvetica;
+	font-family: 'Karla', sans-serif;
+	font-weight: bold;
 	font-size:1.2em;
 	color:white;
 	padding:0;
-	margin:10px;
+	margin:20px 0 10px 0;
 }
 
 #chartbox canvas {
 	margin:10px auto;
 }
 
-
-
-.focus {
-	background-color: #2575B2; 
-}
 
