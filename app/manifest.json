@@ -29,11 +29,16 @@
     "content_scripts": [
         {
             "matches": [
-                "http://*.thetimes.co.uk/*",
-                "https://*.thetimes.co.uk/*",
-                "http://*.thesundaytimes.co.uk/*",
-                "https://*.thesundaytimes.co.uk/*",
+                "http://*.thetimes.co.uk/tto/*/*",
+                "https://*.thetimes.co.uk/tto/*/*",
+                "http://*.thesundaytimes.co.uk/sto/*/*",
+                "https://*.thesundaytimes.co.uk/sto/*/*",
+                "http://*.bbc.co.uk/*/*",
+                "http://*.bbc.com/*/*",
                 "http://aendrew.com/*"
+            ],
+            "exclude_matches": [
+                "http://www.thetimes.co.uk/tto/*/"
             ],
             "css": [
                 "styles/main.css"
@@ -42,6 +47,7 @@
                 "bower_components/jquery/dist/jquery.js",
                 "bower_components/handlebars/handlebars.js",
                 "scripts/Chart.js",
+                "bower_components/underscore/underscore.js",
                 "scripts/contentscript.js"
             ],
             "run_at": "document_end",
