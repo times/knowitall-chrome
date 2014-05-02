@@ -16,14 +16,15 @@ div {
 #popup {
 	position: absolute;
 	top:100px;
-	left:100px;
-	/*opacity:0;*/
+	right:-700px;
+	opacity:0;
 	width:600px;
 	height:350px;
 	background color:white;
 }
 
 #popup #header {
+	position: relative;
 	width:100%;
 	height:80px;
 	background-color: #2575B2;
@@ -32,10 +33,18 @@ div {
 #header h1 {
 	font-family: 'Karla', sans-serif;
 	font-weight:bold;
-	font-size:2em;
+	font-size:1.5em;
 	color:white;
-	padding:20px 0 0 20px;
+	padding:25px 0 0 20px;
 	margin:0;
+}
+
+#header img {
+	height:30px;
+	width:36px;
+	position: absolute;
+	top:24px;
+	right:24px;
 }
 
 #popup #stories {
