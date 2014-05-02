@@ -9,8 +9,8 @@ div {
 
 #myChart {
 	position:fixed;
-	bottom:50px;
-	right:50px;
+	bottom:20px;
+	right:20px;
 }
 
 #popup {
@@ -39,12 +39,14 @@ div {
 	margin:0;
 }
 
-#header img {
+#header div {
 	height:30px;
 	width:36px;
 	position: absolute;
 	top:24px;
 	right:24px;
+	background-image:url('../images/icon.png');
+	background-size: 36px 30px;
 }
 
 #popup #stories {
@@ -57,6 +59,7 @@ div {
 }
 
 	#stories .recommended {
+		display:inline-block;
 		height: 134px;
 		width:348px;
 		font-family: 'Karla', sans-serif;
@@ -121,4 +124,22 @@ div {
 	margin:10px auto;
 }
 
+#sidebar {
+	height:1000px;
+	width:250px;
+	background-image: url('../images/sidebar.png');
+	background-size:250px auto;
+	background-repeat: no-repeat;
+	position:fixed;
+	top:0;
+	right:-400px;
+	opacity:0;
+}
 
+.sidebar1 {
+	background-image: url('../images/sidebar.png') !important;
+}
+
+.sidebar2 {
+	background-image: url('../images/sidebar2.png') !important;
+}
